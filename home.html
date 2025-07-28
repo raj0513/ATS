@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATS Style Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="top-nav">
+                <div class="navigations-1">
+                    <a href="#">Engage ATS</a>
+                    <span>|</span>
+                    <a href="#">Canvas</a>
+                    <span>|</span>
+                    <a href="#">Contact Us</a>
+                    <span class="social-icons">
+                        <a href="#"><img src="nav/facebook.png" alt="fb"></a>
+                        <a href="#"><img src="nav/twitter.png" alt="tw"></a>
+                        <a href="#"><img src="nav/vimeo.png" alt="vimeo"></a>
+                        <a href="#"><img src="nav/youtube.png" alt="yt"></a>
+                    </span>
+                    <a class="btn-home" href="#">ATS Home Page</a>
+                    <a class="btn-discover" href="#">Discover Our Schools</a>
+                </div>
+            </div>
+
+            <div class="bottom-nav">
+                <div class="navigations-2">
+                    <div class="logo">
+                        <img src="main/ATS.png" alt="ATS Logo" />
+                    </div>
+                     <a class="mob-search-icon"><img src="nav/search.png" alt="search" ></a>
+                    <button class="menubtn" onclick="toggleMobileMenu()">☰</button>
+                    <ul class="nav-links" id="navMenu">
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Accreditation</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li class="search-icon"><img src="nav/search.png" alt="search" ></li>
+                        <a class="mob-btn-discover" href="#">Discover Our Schools</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="slideshow-container">
+            <div class="slideshow" id="slideshow">
+                <div class="slide-img slid-img-1">
+                    <div class="overlay"></div>
+                    <div class="slideshow-headlines">
+                        <h1>Have an accrediting question?</h1>
+                        <p>Accreditation is about quality assurance for various publics and ongoing improvement for
+                            theological schools, especially regarding student learning and formation.</p>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="slide-img slid-img-2">
+                    <div class="overlay"></div>
+                    <div class="slideshow-headlines">
+                        <h1>The Association of Theological Schools</h1>
+                        <p>The Association of Theological Schools (ATS) and the ATS Commission on Accrediting
+                            accredit and support a membership of more than 270 graduate theology schools in North
+                            America.</p>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="slide-img slid-img-3">
+                    <div class="overlay"></div>
+                    <div class="slideshow-headlines">
+                        <h1>Heading back to school?</h1>
+                        <p>Discover the school that best works for you.</p>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="arrow left" onclick="prevSlide()"><img src="main/left-arrow.png" /></button>
+            <button class="arrow right" onclick="nextSlide()"><img src="main/right-arrow.png" /></button>
+        </div>
+
+        <section class="cards-section">
+            <div class="cards-section-div">
+                <div class="card">
+                    <img src="main/Membership.png" alt="Membership Icon">
+                    <h3>Membership</h3>
+                    <a href="#" class="card-link">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="main/Accreditation.png" alt="Accreditation Icon">
+                    <h3>Accreditation</h3>
+                    <a href="#" class="card-link">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="main/Resources.png" alt="Resources Icon">
+                    <h3>Resources</h3>
+                    <a href="#" class="card-link">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="news-section">
+            <div class="news-container">
+                <h2>In the News</h2>
+                <p class="subtitle">
+                    <em>Colloquy Online</em>—the Association’s newsletter—features trends in theological education,
+                    reflections by ATS administrators and faculty, recommended best practices, and ATS news.
+                </p>
+
+                <div class="news-slider">
+                    <div class="news-card">
+                        <img src="main/Events (1).jpg" alt="News 1" />
+                        <div class="overlay">
+                            <div class="news-card-des">
+                                <h3>Recipients named for latest Pathways for Tomorrow grants</h3>
+                                <div class="btn-line"></div>
+                                <a href="#" class="news-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <img src="main/Events (2).jpg" alt="News 2" />
+                        <div class="overlay">
+                            <div class="news-card-des">
+                                <h3>ATS research featured in top academic journal</h3>
+                                <div class="btn-line"></div>
+                                <a href="#" class="news-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="main/Events (2).jpg" alt="News 2" />
+                        <div class="overlay">
+                            <div class="news-card-des">
+                                <h3>ATS research featured in top academic journal</h3>
+                                <div class="btn-line"></div>
+                                <a href="#" class="news-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="main/Events (2).jpg" alt="News 2" />
+                        <div class="overlay">
+                            <div class="news-card-des">
+                                <h3>ATS research featured in top academic journal</h3>
+                                <div class="btn-line"></div>
+                                <a href="#" class="news-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="main/Events (2).jpg" alt="News 2" />
+                        <div class="overlay">
+                            <div class="news-card-des">
+                                <h3>ATS research featured in top academic journal</h3>
+                                <div class="btn-line"></div>
+                                <a href="#" class="news-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="upcoming-events">
+            <div class="events-inner">
+                <div class="events-header">
+                    <h2>Upcoming Events</h2>
+                    <a href="#" class="view-all">All events →</a>
+                </div>
+                <p class="events-desc">
+                    ATS offers events and resources to assist member schools with best practices, peer networks,
+                    research production, and data exploration.
+                </p>
+
+                <div class="events-slider">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="day">15</div>
+                            <div class="month">Sep 2025</div>
+                            <div class="thru">(THRU SEPT 16)</div>
+                        </div>
+                        <img src="main/Events (1).jpg" class="event-image" alt="Event 1" />
+                        <div class="event-content">
+                            <h3>2025 ATS School for New Deans</h3>
+                            <p>Designed for those new to the role of dean, this event will focus on sharing key
+                                resources, exploring common challenges, connecting with new colleagues, and reflecting
+                                on the vocation of academic leadership.</p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="day">15</div>
+                            <div class="month">Oct 2025</div>
+                            <div class="thru">(THRU OCT 16)</div>
+                        </div>
+                        <img src="main/Events (1).jpg" class="event-image" alt="Event 2" />
+                        <div class="event-content">
+                            <h3>2025 ATS Technology in Theological Education Group Gathering</h3>
+                            <p>Designed for technology professionals and educational technologists who serve ATS
+                                schools, this gathering will allow participants to engage in conversation and peer
+                                learning around their work.</p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="day">11</div>
+                            <div class="month">Nov 2025</div>
+                            <div class="thru">(THRU NOV 13)</div>
+                        </div>
+                        <img src="main/Events (3).jpg" class="event-image" alt="Event 3" />
+                        <div class="event-content">
+                            <h3>2025 ATS Financial Officers Conference</h3>
+                            <p>Designed for finance professionals across ATS schools, this conference will focus on
+                                sustainability amidst change at member institutions.</p>
+                            <a href="#" class="learn-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-overlay">
+            <div class="footer-top">
+                <div class="footer-header">
+                    <div class="footer-logo-icon">
+                        <img src="main/ATSw.png" alt="ATS Logo" class="footer-logo" />
+                        <div class="footer-icons">
+                            <a href="#"><img src="footer/facebook.png" alt="FB" /></a>
+                            <a href="#"><img src="footer/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="footer/vimeo.png" alt="Vimeo" /></a>
+                            <a href="#"><img src="footer/youtube.png" alt="YouTube" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <p><strong>The Association of Theological Schools</strong></p>
+                        <p>10 Summit Park Drive<br>Pittsburgh PA 15275-1110</p>
+                        <p><a href="#" class="footer-phone">412-788-6505</a></p>
+                        <p><a href="#" class="footer-email">communications@ats.edu</a></p>
+                    </div>
+
+                    <div class="footer-col">
+                        <p><a href="#">Who We Are</a></p>
+                        <p><a href="#">Membership</a></p>
+                        <p><a href="#">Accreditation</a></p>
+                        <p><a href="#">Resources</a></p>
+                        <p><a href="#">Events</a></p>
+                    </div>
+
+                    <div class="footer-col">
+                        <p><a href="#">Find a School</a></p>
+                        <p><a href="#">Engage ATS</a></p>
+                        <p><a href="#">Canvas</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Staff</a></p>
+                    </div>
+
+                    <div class="footer-col subscribe">
+                        <p><strong><em>Colloquy Online<br>(member newsletter)</em></strong></p>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <span class="subscribe-btn">
+                            <button>Subscribe</button>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p>© 2025 The Association of Theological Schools, All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
