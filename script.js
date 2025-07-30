@@ -1,7 +1,15 @@
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => document.getElementById("mainnav").innerHTML = data);
+
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => document.getElementById("mainfooter").innerHTML = data);
+
 function toggleMobileMenu() {
-      const navMenu = document.getElementById("navMenu");
-      navMenu.classList.toggle("show");
-    }
+  const navMenu = document.getElementById("navMenu");
+  navMenu.classList.toggle("show");
+}
 
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide-img");

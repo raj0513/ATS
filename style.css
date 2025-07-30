@@ -608,7 +608,90 @@ footer {
     cursor: pointer;
 }
 
-.card:hover {}
+
+.card-1:hover {
+    background-color: #4B0146;
+    color: white;
+    transition: background-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.card-1:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #4B0146;
+    z-index: 0;
+    animation: fillUpCard1 0.2s forwards;
+}
+@keyframes fillUpCard1 {
+    from { height: 0; }
+    to { height: 100%; }
+}
+.card-1:hover {
+    color: white;
+}
+.card-1:hover > * {
+    position: relative;
+    z-index: 1;
+}
+
+.card-2:hover {
+    background-color: #003366;
+    color: white;
+    transition: background-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.card-2:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #003366;
+    z-index: 0;
+    animation: fillUpCard2 0.2s forwards;
+}
+@keyframes fillUpCard2 {
+    from { height: 0; }
+    to { height: 100%; }
+}
+.card-2:hover > * {
+    position: relative;
+    z-index: 1;
+}
+
+.card-3:hover {
+    background-color: #8B0000;
+    color: white;
+    transition: background-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.card-3:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #8B0000;
+    z-index: 0;
+    animation: fillUpCard3 0.2s forwards;
+}
+@keyframes fillUpCard3 {
+    from { height: 0; }
+    to { height: 100%; }
+}
+.card-3:hover > * {
+    position: relative;
+    z-index: 1;
+}
 
 .card img {
     width: 100px;
@@ -626,10 +709,12 @@ footer {
 
 .card-link {
     display: inline-block;
-    color: #333;
     font-size: 16px;
     text-decoration: none;
     margin: 20px 0;
+}
+.card-link:hover {
+    color: #fff;
 }
 
 
