@@ -1,0 +1,358 @@
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 500px;
+            filter: brightness(0.7);
+        }
+
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+        }
+
+        .banner h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            text-align: start;
+            margin: 0;
+        }
+
+
+        .heading-outer {}
+
+        .heading-outer-2 {
+            background-color: #EAECEF;
+        }
+
+        .heading-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: start;
+        }
+
+        .heading {
+            text-align: start;
+            margin: 0 auto;
+
+        }
+
+        .heading-text {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .heading-title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #003846;
+        }
+
+        .heading-title:after {
+            width: 40px;
+            height: 2px;
+            background: #E29A1B;
+            display: block;
+            content: "";
+            margin-top: 30px
+        }
+
+        .heading-description,
+        .corporation-description,
+        .membership-level-description {
+            line-height: 1.5;
+            font-size: 18px;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #003846;
+            margin: 20px 0;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003846;
+            margin: 15px 0;
+        }
+
+        .membership-level-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .membership-level-number {
+            background-color: #509596;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            display: flex;
+            margin-right: 10px;
+            justify-content: center;
+        }
+
+        .membership-level-number h2 {
+            color: #fff;
+            font-size: 30px;
+            margin: 0;
+            padding: 5px;
+        }
+
+        .corporations-container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
+        }
+
+        .membership-levels {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
+        }
+
+        .membership-process-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #E29A1B;
+            color: white;
+            border: 0.5px solid white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .membership-process-btn:hover {
+            background-color: #003846;
+        }
+
+        .Core-values {
+            padding: 0;
+            margin: 0;
+        }
+
+        .Core-values-carts-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+            height: 500px;
+        }
+
+        .Core-values-carts-2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+            background-color: #EAECEF;
+            height: 500px;
+        }
+
+
+        .Core-values-text-1 {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .Core-values-text-2 {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .Core-values-img {
+            width: 50%;
+            margin: 0;
+        }
+
+
+        .Core-values-text-inner {
+            padding: 0 85px;
+            display: flex;
+            width: 65%;
+            flex-direction: column;
+        }
+
+        .Core-values-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .Core-values-number {
+            background-color: #509596;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            display: flex;
+            margin-right: 10px;
+            justify-content: center;
+        }
+
+        .Core-values-number h2 {
+            color: #fff;
+            font-size: 30px;
+            margin: 0;
+            padding: 5px;
+        }
+
+        .Core-values-text-inner p {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        .Core-img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .last-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: start;
+        }
+
+        .last-section p {
+            font-size: 18px;
+        }
+
+        @media (max-width: 420px) {
+            .banner-content {
+                left: 35%;
+                margin: 10px;
+            }
+
+            .banner h1 {
+                font-size: 35px;
+
+            }
+
+            .banner img {
+                object-fit: cover;
+                height: 500px;
+            }
+
+            .cards-section {
+                height: 900px;
+            }
+
+            .cards-section-div {
+                gap: 30px;
+                margin-bottom: 30px;
+                top: -140px;
+            }
+
+            .card {
+                width: 265px;
+            }
+
+            .corporations-container {
+                flex-wrap: wrap;
+            }
+
+            .membership-levels {
+                flex-wrap: wrap;
+            }
+
+
+            .Core-values-carts-1 {
+                height: auto;
+            }
+
+            .Core-values-carts-2 {
+                height: auto;
+            }
+
+
+            .Core-values-text-1 {
+                margin: 0;
+                display: flex;
+                justify-content: start;
+            }
+
+            .Core-values-text-2 {
+                margin: 0;
+                display: flex;
+                justify-content: start;
+            }
+
+            .Core-values-img {
+                display: none;
+            }
+
+
+            .Core-values-text-inner {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .Core-values-header {
+                display: flex;
+                align-items: center;
+            }
+
+            .Core-values-number {
+                background-color: #509596;
+                border-radius: 50%;
+                height: 35px;
+                width: 35px;
+                display: flex;
+                margin-right: 10px;
+                justify-content: center;
+            }
+            .Core-values-number h2 {
+                color: #fff;
+                font-size: 20px;
+                margin: 0;
+                padding: 5px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+
+
+
+            .Core-values-text-inner p {
+                font-size: 16px;
+            }
+
+            .Core-values-img {
+                display: none;
+            }
+
+            .Core-img {
+                display: none;
+
+            }
+        }

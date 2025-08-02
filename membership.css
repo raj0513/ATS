@@ -1,0 +1,378 @@
+  .banner {
+      position: relative;
+      text-align: center;
+      color: white;
+  }
+
+  .banner img {
+      width: 100%;
+      height: 650px;
+      object-fit: cover;
+      filter: brightness(0.7);
+  }
+
+  h1 {
+      position: absolute;
+      top: 40%;
+      left: 22%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      font-weight: bold;
+      text-shadow: -1px 4px 9px rgba(0, 0, 0, 0.7);
+  }
+
+  .cards-section {
+      height: 60px;
+  }
+
+  .cards-section-div {
+      display: flex;
+      justify-content: center;
+      gap: 110px;
+      margin-bottom: 56px;
+      flex-wrap: wrap;
+      position: relative;
+      top: -140px;
+  }
+
+  .card {
+      background: white;
+      width: 160px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+.card:hover {
+    background-color: #E29A1B;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+  .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+  }
+
+  .card-img-2 {
+      display: none;
+  }
+
+  .card:hover .card-img-1 {
+      display: none;
+  }
+
+  .card:hover .card-img-2 {
+      display: block;
+  }
+
+  .card h4 {
+      font-size: 18px;
+      margin: 20px;
+      width: 77%;
+      color: #3F0339;
+  }
+
+  .card:hover h4 {
+      color: white;
+  }
+
+  .membership-outer {
+      padding: 45px 0;
+  }
+
+  .membership-inner {
+      max-width: 1100px;
+      display: flex;
+      gap: 20px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: start;
+  }
+
+  .heading {
+      text-align: start;
+      margin: 0 auto;
+
+  }
+
+  .heading-text {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  .membership-image {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+
+  }
+
+  .heading-title {
+      font-size: 42px;
+      font-weight: bold;
+      color: #3F0339;
+  }
+
+  .heading-title:after {
+      width: 40px;
+      height: 2px;
+      background: #E29A1B;
+      display: block;
+      content: "";
+      margin-top: 30px
+  }
+
+  .heading-description {
+      line-height: 1.5;
+      font-size: 18px;
+      color: #444;
+      margin-top: 10px;
+  }
+
+  .membership-inner-2 {
+      max-width: 1100px;
+      display: flex;
+      gap: 20px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: start;
+  }
+
+  .membership-benefits {
+      display: flex;
+
+  }
+
+  .benefits-image {
+      width: 30%;
+      height: auto;
+      object-fit: cover;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .benefits-image img {
+      width: auto;
+      height: auto;
+  }
+
+  .benefits-image p {
+      text-align: center;
+      font-size: 18px;
+      color: #3F0339;
+      font-weight: bold;
+  }
+
+  .benefits-text {
+      font-size: 18px;
+      color: #444;
+      margin-top: 10px;
+      line-height: 1.5;
+      width: 70%;
+  }
+
+  ul {
+      font-size: 20px;
+      color: #3F0339;
+      font-weight: bold;
+  }
+
+  a {
+      color: #003846;
+      text-decoration: underline;
+  }
+
+  .membership-outer-3 {
+      max-width: 1100px;
+      background-color: rgba(63, 3, 57, 0.69);
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .membership-inner-3 {
+      max-width: 1000px;
+      display: flex;
+      gap: 20px;
+      margin: 0 auto;
+      margin: 20px;
+      text-align: start;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .heading-3 {
+      text-align: start;
+      display: flex;
+  }
+
+  .heading-text-3 {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      width: 50%;
+  }
+
+  .heading-title-3 {
+      font-size: 42px;
+      font-weight: bold;
+      color: #ffffff;
+  }
+
+  .heading-description-3 {
+      line-height: 1.5;
+      font-size: 16px;
+      color: #ffffff;
+      margin-top: 10px;
+  }
+
+  .membership-button {
+      background: transparent;
+      color: white;
+      padding: 10px 25px;
+      font-size: 16px;
+      border: 1px solid white;
+      text-decoration: none;
+      align-self: end;
+      transition: background 0.3s ease;
+  }
+   .membership-button:hover {
+      background: #E29A1B;
+      color: white;
+   }
+
+  .membership-image-3 {
+    right: 109px;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+  @media (max-width: 420px) {
+      .banner img {
+          object-fit: cover;
+          height: 500px;
+      }
+
+      .banner h1 {
+          font-size: 35px;
+          margin: 10px;
+          left: 30%;
+      }
+
+      .cards-section {
+          height: 650px;
+      }
+
+      .cards-section-div {
+          gap: 30px;
+          margin-bottom: 30px;
+          top: -140px;
+      }
+
+      .card {
+          width: 265px;
+      }
+
+      .membership-inner {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .membership-image {
+          width: 100%;
+      }
+
+      .membership-inner-2 {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .membership-benefits {
+          flex-direction: column;
+          align-items: center;
+
+      }
+
+      .benefits-image {
+          width: 100%;
+      }
+
+      .benefits-image img {
+          width: auto;
+          height: auto;
+      }
+
+      .benefits-text {
+          font-size: 18px;
+          color: #444;
+          margin-top: 10px;
+          line-height: 1.5;
+          width: 100%;
+      }
+
+      ul {
+          gap: 10px;
+      }
+
+      .membership-outer-3 {
+      max-width: 1100px;
+      background-color: rgba(63, 3, 57, 0.69);
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .membership-inner-3 {
+      width: 100%;
+      margin: 0;
+      
+  }
+
+  .heading-3 {
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .heading-text-3 {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      width: 80%;
+      margin: 20px;
+  }
+
+  .heading-title-3 {
+      font-size: 42px;
+      font-weight: bold;
+      color: #ffffff;
+  }
+
+  
+
+  .membership-image-3 {
+    right: 0;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+  }

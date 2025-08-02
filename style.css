@@ -316,7 +316,7 @@ header {
     text-decoration: none;
     margin: 20px 0;
 }
-.card-link:hover {
+.card:hover .card-link {
     color: #fff;
 }
 
@@ -482,10 +482,9 @@ header {
 
 .news-btn:hover {
     background: #E29A1B;
-    color: black;
+    color: white;
 }
 
-/* Arrows */
 .slider-controls {
     margin-top: 30px;
     display: flex;
@@ -594,6 +593,9 @@ header {
     z-index: 2;
 }
 
+.month{
+    margin-bottom: 20px;
+}
 .event-date .day {
     font-size: 22px;
     font-weight: 700;
