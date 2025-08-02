@@ -285,25 +285,19 @@
             }
 
 
-            .Core-values-carts-1 {
-                height: auto;
-            }
-
+            .Core-values-carts-1,
             .Core-values-carts-2 {
                 height: auto;
+                padding: 0 30px;
             }
 
 
-            .Core-values-text-1 {
-                margin: 0;
-                display: flex;
-                justify-content: start;
-            }
-
+            .Core-values-text-1,
             .Core-values-text-2 {
                 margin: 0;
                 display: flex;
                 justify-content: start;
+                width: 100%;
             }
 
             .Core-values-img {
@@ -312,6 +306,7 @@
 
 
             .Core-values-text-inner {
+                padding: 0;
                 display: flex;
                 width: 100%;
                 flex-direction: column;
@@ -355,4 +350,7 @@
                 display: none;
 
             }
+            .last-section {
+            padding: 30px;
+        }
         }
