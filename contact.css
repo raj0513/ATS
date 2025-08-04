@@ -110,6 +110,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    padding: 0 10px;
 }
 
 .form-grid input,
@@ -211,4 +212,15 @@ form {
         box-sizing: border-box;
     }
 
-}
+    form {
+        padding: 5px;
+    }
+
+    .form-section h2 {
+        font-size: 28px;
+        padding-left: 0;
+    }
+
+    .form-grid {
+        padding: 0;
+    }
