@@ -5,10 +5,27 @@ fetch("header.html")
 fetch("footer.html")
   .then(response => response.text())
   .then(data => document.getElementById("mainfooter").innerHTML = data);
-
 function toggleMobileMenu() {
   const navMenu = document.getElementById("navMenu");
   navMenu.classList.toggle("show");
+
+  setTimeout(() => {
+    if (navMenu.classList.contains("show")) {
+      document.addEventListener("click", handleOutsideClick);
+    } else {
+      document.removeEventListener("click", handleOutsideClick);
+    }
+  }, 10);
+}
+
+function handleOutsideClick(event) {
+  const navMenu = document.getElementById("navMenu");
+  const menuButton = document.querySelector(".menubtn");
+
+  if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
+    navMenu.classList.remove("show");
+    document.removeEventListener("click", handleOutsideClick);
+  }
 }
 
 let currentSlide = 0;

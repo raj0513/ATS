@@ -105,14 +105,14 @@ a:hover {
     cursor: pointer;
 }
 
-.nav-links {
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 30px;
 }
 
-.nav-links a {
+.nav-menu a {
     font-weight: bold;
     color: #065E5E;
     font-size: 17px;
@@ -130,7 +130,7 @@ a:hover {
 }
 
 @media (max-width: 420px) {
-    .nav-links {
+    .nav-menu {
         display: none;
         flex-direction: column;
         background: #fff;
@@ -143,11 +143,11 @@ a:hover {
         padding: 10px 0;
     }
 
-    .nav-links.show {
+    .nav-menu.show {
         display: flex;
     }
 
-    .nav-links a {
+    .nav-menu a {
         padding: 10px 20px;
         font-size: 16px;
         border-bottom: 1px solid #eee;
