@@ -209,6 +209,16 @@ header {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
+}
+.card-1 h3, .card-link-1 {
+    color: #4B0146;
+}
+.card-2 h3, .card-link-2 {
+    color: #003366;
+}
+.card-3 h3, .card-link-3 {
+    color: #8B0000;
 }
 
 
@@ -354,7 +364,7 @@ header {
     margin: 20px 0;
 }
 
-.card:hover .card-link {
+.card:hover  h3 , .card:hover .card-link {
     color: #fff;
 }
 
