@@ -45,17 +45,23 @@ function prevSlide() {
 setInterval(nextSlide, 10000);
 updateSlide();
 
-
 const slider = document.querySelector('.news-slider');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 const cards = slider.querySelectorAll('.news-card');
-
 const gap = 30;
-const cardWidth = cards[0].offsetWidth + gap;
-const visibleCards = 2;
+
+function getCardWidth() {
+  return cards[0].offsetWidth + gap;
+}
+function getVisibleCards() {
+  return window.matchMedia("(max-width: 420px)").matches ? 1 : 2;
+}
 
 prevBtn.addEventListener('click', () => {
+  const visibleCards = getVisibleCards();
+  const cardWidth = getCardWidth();
+
   if (slider.scrollLeft <= 0) {
     slider.scrollTo({
       left: slider.scrollWidth,
@@ -70,6 +76,8 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
+  const visibleCards = getVisibleCards();
+  const cardWidth = getCardWidth();
   const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
 
   if (slider.scrollLeft >= maxScrollLeft - 5) {
@@ -84,4 +92,3 @@ nextBtn.addEventListener('click', () => {
     });
   }
 });
-

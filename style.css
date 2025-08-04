@@ -172,11 +172,11 @@ header {
 
 
     .arrow.left {
-        left: 10px;
+        left: 0;
     }
 
     .arrow.right {
-        right: 10px;
+        right: 0;
     }
 
     .arrow img {
@@ -327,6 +327,18 @@ header {
     object-fit: contain;
     margin-bottom: 20px;
 }
+.card-img-2 {
+    display: none;
+}
+
+.card:hover .card-img-1 {
+    display: none;
+}
+
+.card:hover .card-img-2 {
+    display: inline;
+}
+
 
 .card h3 {
     font-size: 22px;
