@@ -5,10 +5,62 @@ fetch("header.html")
 fetch("footer.html")
   .then(response => response.text())
   .then(data => document.getElementById("mainfooter").innerHTML = data);
+
+
+  function toggleMobileMenu() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("show");
+
+    setTimeout(() => {
+      if (navMenu.classList.contains("show")) {
+        document.addEventListener("click", handleOutsideMenuClick);
+      } else {
+        document.removeEventListener("click", handleOutsideMenuClick);
+      }
+    }, 10);
+  }
+
+  function handleOutsideMenuClick(e) {
+    const navMenu = document.getElementById("navMenu");
+    const menuBtn = document.querySelector(".menubtn");
+    if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      navMenu.classList.remove("show");
+      document.removeEventListener("click", handleOutsideMenuClick);
+    }
+  }
+
+  function toggleSearch() {
+    const searchBox = document.getElementById("search-container");
+    searchBox.classList.toggle("hidden");
+
+    setTimeout(() => {
+      if (!searchBox.classList.contains("hidden")) {
+        document.addEventListener("click", handleOutsideSearchClick);
+      } else {
+        document.removeEventListener("click", handleOutsideSearchClick);
+      }
+    }, 10);
+  }
+
+  function handleOutsideSearchClick(e) {
+    const searchBox = document.getElementById("search-container");
+    const searchIcons = document.querySelectorAll(".mob-search-icon img, .search-icon img");
+    let clickedInsideIcon = false;
+
+    searchIcons.forEach(btn => {
+      if (btn.contains(e.target)) clickedInsideIcon = true;
+    });
+
+    if (!searchBox.contains(e.target) && !clickedInsideIcon) {
+      searchBox.classList.add("hidden");
+      document.removeEventListener("click", handleOutsideSearchClick);
+    }
+  }
+
+
 function toggleMobileMenu() {
   const navMenu = document.getElementById("navMenu");
   navMenu.classList.toggle("show");
-
   setTimeout(() => {
     if (navMenu.classList.contains("show")) {
       document.addEventListener("click", handleOutsideClick);

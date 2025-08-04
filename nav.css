@@ -219,3 +219,131 @@ a:hover {
         width: 80%;
     }
 }
+
+.search-popup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#search-container {
+    position: absolute;
+    top: 40%;
+    left: auto;
+    right: auto;
+    margin: auto;
+    width: 100%;
+    z-index: 999;
+    background: #e7eaed;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#search-container.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn:hover {
+    background: #ccc;
+}
+
+#search-container {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+#search-container.hidden {
+    display: none;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+
+.search-form {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #006666;
+    margin-bottom: 5px;
+}
+
+#search-keyword {
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+}
+
+#search-keyword:focus {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+#search-in {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-button {
+    background: #0c5d60;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 420px) {
+    #search-container {
+        width: 70%;
+        top: 30%;
+        padding: 25px;
+
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+}

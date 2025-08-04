@@ -34,7 +34,7 @@
                         <img src="main/ATS.png" alt="ATS Logo" />
                     </a>
                 </div>
-                <a class="mob-search-icon"><img src="nav/search.png" alt="search"></a>
+                <a class="mob-search-icon" onclick="toggleSearch()"><img src="nav/search.png" alt="search"></a>
                 <button class="menubtn" onclick="toggleMobileMenu()">☰</button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="About-ATS.html">Who We Are</a></li>
@@ -42,12 +42,36 @@
                     <li><a href="Accreditation.html">Accreditation</a></li>
                     <li><a href="Resources.html">Resources</a></li>
                     <li><a href="Events.html">Events</a></li>
-                    <li class="search-icon"><img src="nav/search.png" alt="search"></li>
+                    <li class="search-icon" onclick="toggleSearch()"><img src="nav/search.png" alt="search"></li>
                     <a class="mob-btn-discover" href="index.html">Discover Our Schools</a>
                 </ul>
             </div>
         </div>
     </nav>
+    <section class="search-popup">
+        <div id="search-container" class="hidden">
+            <span class="close-btn" onclick="toggleSearch()">&times;</span>
+            <div class="search-form">
+                <div class="form-group">
+                    <label for="search-keyword">Search Keyword</label>
+                    <input type="text" id="search-keyword" placeholder="What are you looking for?" />
+                </div>
+                <div class="form-group">
+                    <label for="search-in">Search In</label>
+                    <select id="search-in">
+                        <option>ATS website</option>
+                        <option>Membership</option>
+                        <option>Accreditation</option>
+                        <option>Resources</option>
+                    </select>
+                </div>
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+
+
 
 </body>
+
 </html>
