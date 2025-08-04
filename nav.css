@@ -236,10 +236,9 @@ a:hover {
     width: 100%;
     z-index: 999;
     background: #e7eaed;
-    padding: 20px;
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 850px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
@@ -283,15 +282,19 @@ a:hover {
 
 .search-form {
     display: flex;
+    align-items: flex-end;
+    align-items: center;
     gap: 20px;
     width: 100%;
-    align-items: flex-end;
+    margin: 2px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 10px;
+    margin: 10px;
 }
 
 .form-group label {
@@ -325,9 +328,8 @@ a:hover {
 .search-button {
     background: #0c5d60;
     color: white;
-    padding: 12px 24px;
+    padding: 45px;
     border: none;
-    border-radius: 2px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -336,14 +338,16 @@ a:hover {
     #search-container {
         width: 70%;
         top: 30%;
-        padding: 25px;
+        padding: 20px;
 
     }
-
     .search-form {
         flex-direction: column;
         gap: 10px;
         align-items: stretch;
+    }
+    .search-button {
+        padding: 12px 24px;
     }
 
 }
