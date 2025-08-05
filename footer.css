@@ -102,9 +102,10 @@ footer {
 }
 
 .footer-col.subscribe input:focus {
-    background-color: white;
+    background-color: transparent;
     color: black;
-    outline: none;
+    outline: 1px solid white;
+    border: none;
 }
 
 .subscribe-btn {
@@ -127,19 +128,6 @@ footer {
     background-color: #F4A623;
 }
 
-.footer-bottom {
-    background-color: #002c3e;
-    text-align: center;
-    padding: 8px;
-}
-
-.footer-bottom-inner {
-    width: 75%;
-    margin: 0 auto;
-    color: white;
-    font-size: 14px;
-    text-align: left;
-}
 
 @media (max-width: 420px) {
     .footer-top {
